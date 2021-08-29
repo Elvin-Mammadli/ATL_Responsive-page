@@ -1,0 +1,160 @@
+html,
+body {
+  height: 100%;
+  color: white;
+}
+#header {
+  background-image: linear-gradient(
+      rgba(31, 31, 31, 0.9) 0%,
+      rgba(37, 37, 37, 0.9) 100%
+    ),
+    url(./images/img-1.jpg);
+  height: 100%;
+}
+
+#header > nav {
+  padding: 5rem 15rem;
+}
+
+.hero {
+  display: flex;
+  padding: 0 20rem;
+}
+
+.hero > .left {
+  flex-grow: 1;
+}
+
+.hero > .right {
+  flex-grow: 1;
+}
+
+#header > .hero > .left > h3 {
+  font-size: 3rem;
+}
+
+#header > .hero > .left > h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.left > p {
+  font-size: 2rem;
+  max-width: 50rem;
+}
+
+.hero > .left .btn {
+  padding: 2rem 4rem;
+  background-color: #05d561;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  display: inline-block;
+  border-radius: 3rem;
+}
+
+.hero > .left > span span {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.hero > .left > .parent1 {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  font-size: 3rem;
+  background-color: white;
+  height: 100%;
+  color: black;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+div.circle {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > p {
+  font-size: 1.5rem;
+  max-width: 20rem;
+}
+
+.form > * {
+  display: block;
+  max-width: 80rem;
+}
+
+.form input {
+  padding: 0.6rem 2rem;
+}
+
+.form .submit-button {
+  padding: 1rem 5rem;
+}
+
+section.middle {
+  padding: 9.6rem 0 4.8rem;
+}
+
+section.middle h2 {
+  color: rgb(0, 0, 0);
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin: auto;
+  max-width: 700px;
+  margin-bottom: 4rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+section > hr {
+  background-color: rgb(201, 201, 201);
+  width: 80%;
+}
+
+@media screen and (max-width: 1206px) {
+  div.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr;
+  }
+}
+
+section .products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+div.product .icon {
+  width: 80px;
+  height: 80px;
+  background-color: #eec8c8;
+  border-radius: 100px;
+  color: rgb(0, 0, 0);
+  font-size: 3.2rem;
+}
+
+div.icon i {
+  margin: auto;
+}
+
+div.product p {
+  font-family: "Titillium Web", sans-serif;
+  color: red;
+  font-weight: 400;
+}
+
+
