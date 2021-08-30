@@ -1,160 +1,189 @@
 html,
 body {
-  height: 100%;
-  color: white;
-}
-#header {
-  background-image: linear-gradient(
-      rgba(31, 31, 31, 0.9) 0%,
-      rgba(37, 37, 37, 0.9) 100%
-    ),
-    url(./images/img-1.jpg);
-  height: 100%;
+    height: 100%;
+    color: white;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#header > nav {
-  padding: 5rem 15rem;
+#header {
+    background-image: linear-gradient( rgba(31, 31, 31, 0.8) 0%, rgba(37, 37, 37, 0.8) 100%), url(./images/img-1.jpg);
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#header>nav {
+    padding: 0 0 0 24rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
 }
 
 .hero {
-  display: flex;
-  padding: 0 20rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
-.hero > .left {
-  flex-grow: 1;
+.hero>.left {
+    flex: 1;
+    padding: 0 3.2rem 0;
 }
 
-.hero > .right {
-  flex-grow: 1;
+#header>.hero>.left>h3 {
+    font-size: 1.872rem;
+    margin: 18.72px 0;
+    line-height: 1.2;
 }
 
-#header > .hero > .left > h3 {
-  font-size: 3rem;
+#header>.hero>.left>h1 {
+    font-size: 4.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 32.16px;
 }
 
-#header > .hero > .left > h1 {
-  font-size: 4rem;
-  font-weight: 200;
+.left>p {
+    font-size: 2rem;
+    max-width: 50rem;
+    line-height: 1.8;
+    margin-bottom: 19.2px;
 }
 
-.left > p {
-  font-size: 2rem;
-  max-width: 50rem;
+.hero>.left .btn {
+    padding: 22px 40px;
+    background-color: #05d561;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    font-size: 27.2px;
+    display: inline-block;
+    border-radius: 4rem;
+    font-weight: 600;
 }
 
-.hero > .left .btn {
-  padding: 2rem 4rem;
-  background-color: #05d561;
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-  display: inline-block;
-  border-radius: 3rem;
+.hero>.left>span span {
+    font-size: 1.5rem;
+    margin-left: 1.6rem;
+    line-height: 2;
+    color: rgb(172, 172, 172);
 }
 
-.hero > .left > span span {
-  font-size: 1.5rem;
-  margin-left: 0.5rem;
+.hero>.left>.parent1 {
+    display: flex;
+    align-items: center;
 }
 
-.hero > .left > .parent1 {
-  display: flex;
-  align-items: center;
+.hero>.right {
+    flex: 1;
+    padding: 0 3.2rem 0;
 }
 
 .card {
-  font-size: 3rem;
-  background-color: white;
-  height: 100%;
-  color: black;
-  padding: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 2rem;
+    font-size: 3rem;
+    background-color: white;
+    color: black;
+    padding: 4.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    /* width: 80%; */
 }
 
 div.circle {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 100%;
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+    background-color: #f0f0f0;
+    display: flex;
 }
 
-.card > p {
-  font-size: 1.5rem;
-  max-width: 20rem;
+div.circle i {
+    color: #414;
+    margin: auto;
 }
 
-.form > * {
-  display: block;
-  max-width: 80rem;
+.card>h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 2.656rem;
+}
+
+.card>p {
+    font-size: 1.5rem;
+    margin: 1.6rem 0;
+    color: rgb(136, 136, 136);
+    line-height: 2rem;
+}
+
+.form>* {
+    display: block;
 }
 
 .form input {
-  padding: 0.6rem 2rem;
+    padding: 0.96rem 3.2rem;
+    width: 100%;
 }
 
 .form .submit-button {
-  padding: 1rem 5rem;
+    padding: 1rem 5rem;
 }
 
 section.middle {
-  padding: 9.6rem 0 4.8rem;
+    padding: 9.6rem 0 4.8rem;
 }
 
 section.middle h2 {
-  color: rgb(0, 0, 0);
-  font-size: 3.2rem;
-  font-weight: 300;
-  margin: auto;
-  max-width: 700px;
-  margin-bottom: 4rem;
-  text-align: center;
-  line-height: 5rem;
+    color: rgb(0, 0, 0);
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin: auto;
+    max-width: 700px;
+    margin-bottom: 4rem;
+    text-align: center;
+    line-height: 5rem;
 }
 
-section > hr {
-  background-color: rgb(201, 201, 201);
-  width: 80%;
+section>hr {
+    background-color: rgb(201, 201, 201);
+    width: 80%;
 }
 
 @media screen and (max-width: 1206px) {
-  div.products {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2fr;
-  }
+    div.products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+    }
 }
 
 section .products {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
 }
 
 div.product .icon {
-  width: 80px;
-  height: 80px;
-  background-color: #eec8c8;
-  border-radius: 100px;
-  color: rgb(0, 0, 0);
-  font-size: 3.2rem;
+    width: 80px;
+    height: 80px;
+    background-color: #eec8c8;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 3.2rem;
 }
 
 div.icon i {
-  margin: auto;
+    margin: auto;
 }
 
 div.product p {
-  font-family: "Titillium Web", sans-serif;
-  color: red;
-  font-weight: 400;
+    font-family: "Titillium Web", sans-serif;
+    color: red;
+    font-weight: 400;
 }
-
-
